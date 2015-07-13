@@ -126,6 +126,36 @@ module Kraken
       post_private 'CancelOrder', opts
     end
 
+    #### Private User Funding ####
+
+    def deposit_methods(opts={})
+      post_private 'DepositMethods', opts
+    end
+
+    def deposit_addresses(opts={})
+      post_private 'DepositAddresses', opts
+    end
+
+    def deposit_status(opts={})
+      post_private 'DepositStatus', opts
+    end
+
+    def withdraw_info(opts={})
+      post_private 'WithdrawInfo', opts
+    end
+
+    def withdraw(opts={})
+      post_private 'Withdraw', opts
+    end
+
+    def withdraw_status(opts={})
+      post_private 'WithdrawStatus', opts
+    end
+
+    def withdraw_cancel(opts={})
+      post_private 'WithdrawCancel', opts
+    end
+
     #######################
     #### Generate Signed ##
     ##### Post Request ####
